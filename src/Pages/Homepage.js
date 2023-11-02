@@ -1,15 +1,12 @@
 import React from "react";
+import Hero from "../Components/hero";
+import Footer from "../Components/footer";
 
 const HomePage = () => {
   return (
     <main id="home">
       <section className="vh-100">
-        <img
-          className="position-absolute w-100 h-100"
-          src="/img/hero.jpg"
-          alt="hero-ilab"
-          draggable="false"
-        />
+        <Hero />
         <div className="container h-100 position-relative">
           <div className="row h-100">
             <div className="col-md-5 my-auto text-white">
@@ -19,6 +16,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };
